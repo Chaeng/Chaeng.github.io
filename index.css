@@ -4,7 +4,6 @@ there are definitely some properties you should add!*/
 
     html {
       height: 100%;
-      background-color: #d9e6fc;
     }
     body {
        width: 800px;
@@ -12,9 +11,8 @@ there are definitely some properties you should add!*/
     }
 
     header {
-        background-color: ##96a4bc;
         padding: 5px;
-        font-size: 35;
+        font-size: 20;
         text-align: center;
         display: block;
     }
