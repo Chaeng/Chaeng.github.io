@@ -1,32 +1,126 @@
 <html>
-  <head>
-    <!-- I will write a comment now -->
-    <!-- instruction -->
-    <title>
-      Chaeng (Ploypaphat) Saltz
-    </title>
-    <link href="index.css" type="text/css" rel="stylesheet">
-  </head>
+<head>
+    <meta charset="utf-8">
+    <title>CSS inheritance</title>
+    <style>
+    body {
+        font-family: cursive;
+        color: rgb(32, 86, 112);
+        background: linear-gradient(rgb(250, 250, 250), rgb(150, 150, 150));
+    }
+    h1{
+      font-size: 38px;
+      text-align: center;
+      font-family: cursive;
+      color: rgb(62, 111, 188);
+    }
 
-  <body>
-    <!-- tags shown in browser -->
+    h2 {
+        font-family: cursive;
+        color: rgb(240, 240, 244);
+    }
 
-    <!-- here is where the headline is -->
-    <header>
-      <!-- your site's name -->
-      <h1>
-        Ploypaphat (Chaeng) Saltz
-      </h1>
-    </header>
+    #heading2{
+        font-size: 23px;
+        font-family: cursive;
+        background-color: rgb(62, 111, 188);
+    }
 
-    <section>
-      <p>
-        <!-- Climate change... <a href="https://en.wikipedia.org/wiki/Antarctica">Antarctic Peninsular</a> more than... -->
-      </p>
+    p {
+        font-family: cursive;
+        color: rgb(57, 88, 150);
+        font-family: "Helvetica", sans-serif;
+    }
 
-      <img src="image/photo1.jpg" height="490" width="800">
-    </section>
-    <footer>
-    </footer>
-  </body>
+    #education{
+        font-family: cursive;
+        color: rgb(68, 68, 71);
+        font-weight: bold;
+
+    }
+
+    .song-lyrics {
+        font-family: cursive;
+        font-size: 13px;
+        font-style: italic;
+        line-height: 1.5em;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    </style>
+</head>
+<body>
+
+   <h1>Ploypaphat (Chaeng) Saltz</h1>
+
+   <h2 id="heading2">Summary</h2>
+
+   <p id="summary">Pursuing a master’s degree in Computer Science
+     and Software Engineering during the 2018-2019 school year.
+     An electrical engineer in the commercial aircraft interior industry
+     with experience interfacing with customer and multicultural workplace. </p>
+
+   <h2 id="heading2">Technical Skills</h2>
+   <table>
+    <tbody>
+        <tr>
+            <td>Intermediate</td>
+            <td>C/C++, C#, Java, System Verilog	</td>
+        </tr>
+        <tr>
+            <td>Beginner</td>
+            <td>HTML, CSS</td>
+        </tr>
+        <tr>
+            <td>Familiar</td>
+            <td>SQL, Python</td>
+        </tr>
+    </tbody>
+  </table>
+
+<h2 id="heading2">Software Projects</h2>
+   <h3>Inter-Segment/Group UDP Broadcast (C++11, Linux)	</h3>
+
+   <ul>
+       <li>Designed and implemented a UDP multicast relay program
+         that enables multicasting across network segments.
+         Used PThread to handle multiple tasks including
+         TCP and UDP communication controls. </li>
+       <li>...</li>
+       <li>...</li>
+   </ul>
+
+   <h3>Memory Management </h3>
+
+   <ul>
+       <li>Pair-programmed to model a heap which composed of
+         essential functions such as getmem, freemem, check_heap.
+         Implemented the ‘freemem.c’. Tested ‘getmem.c’
+         which was implemented by the teammate.</li>
+       <li>...</li>
+       <li>...</li>
+   </ul>
+
+   <h2 id="heading2">Education</h2>
+   <table>
+    <tbody>
+        <tr>
+            <td>Master of Science in Computer Science and Software Engineering, University of Washington, Bothell</td>
+            <td>Dec, 2020</td>
+        </tr>
+        <tr>
+            <td>Graduate Certificate in Software Design and Development, University of Washington, Bothell</td>
+            <td>Jun, 2018</td>
+        </tr>
+        <tr>
+            <td>Bachelor of Science: Electrical Engineering, University of Washington, Seattle</td>
+            <td>Aug, 2016</td>
+        </tr>
+    </tbody>
+  </table>
+
+   </body>
 </html>
