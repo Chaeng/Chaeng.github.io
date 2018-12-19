@@ -1,126 +1,213 @@
-<html>
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <title>CSS inheritance</title>
-    <style>
-    body {
-        font-family: cursive;
-        color: rgb(32, 86, 112);
-        background: linear-gradient(rgb(250, 250, 250), rgb(150, 150, 150));
-    }
-    h1{
-      font-size: 38px;
-      text-align: center;
-      font-family: cursive;
-      color: rgb(62, 111, 188);
-    }
-
-    h2 {
-        font-family: cursive;
-        color: rgb(240, 240, 244);
-    }
-
-    #heading2{
-        font-size: 23px;
-        font-family: cursive;
-        background-color: rgb(62, 111, 188);
-    }
-
-    p {
-        font-family: cursive;
-        color: rgb(57, 88, 150);
-        font-family: "Helvetica", sans-serif;
-    }
-
-    #education{
-        font-family: cursive;
-        color: rgb(68, 68, 71);
-        font-weight: bold;
-
-    }
-
-    .song-lyrics {
-        font-family: cursive;
-        font-size: 13px;
-        font-style: italic;
-        line-height: 1.5em;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    </style>
+   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-   <h1>Ploypaphat (Chaeng) Saltz</h1>
-
+  <!-- Page Content -->
+  <div class="header">
+    <img src="image/WebpageHeadTitle_ver2.jpg" width="1271" height="120" class="imgTitle">
+  </div>
    <h2 id="heading2">Summary</h2>
-
    <p id="summary">Pursuing a master’s degree in Computer Science
      and Software Engineering during the 2018-2019 school year.
-     An electrical engineer in the commercial aircraft interior industry
-     with experience interfacing with customer and multicultural workplace. </p>
+     Former electrical engineer in the commercial aircraft interior industry. A self starter and a great team player. </p>
 
    <h2 id="heading2">Technical Skills</h2>
+   <div class="lightBlueCard">
    <table>
     <tbody>
         <tr>
-            <td>Intermediate</td>
-            <td>C/C++, C#, Java, System Verilog	</td>
+            <td id="content1">Intermediate:</td>
+            <td id="content1">C/C++, C#, Java	</td>
         </tr>
         <tr>
-            <td>Beginner</td>
-            <td>HTML, CSS</td>
+            <td id="content1">Beginner:</td>
+            <td id="content1">Unity 3D, HTML&CSS</td>
         </tr>
         <tr>
-            <td>Familiar</td>
-            <td>SQL, Python</td>
+            <td id="content1">Familiar:</td>
+            <td id="content1">Python</td>
         </tr>
     </tbody>
   </table>
-
+</div>
+<h2 id="heading2">Personal Projects</h2>
+<div class="lightBlueCard">
+  <h4>Appa (Unity 3D, C#)</h4>
+      <h5>Dec 2018 - Present</h5>
+  <ul>
+      <li>Designing and implementing a simple Unity 3D interactive math game for kids at age between 8-11.</li>
+      <li>Collecting feedbacks from target group and incorporating them into the development .</li>
+  </ul>
+</div>
+<div class="spacer">
+</div>
+<div class="lightBlueCard">
+  <h4>My First Webpage (HTML, CSS)</h4>
+      <h5>Sep 2018 - Dec 2018</h5>
+  <ul>
+      <li>Designed and implemented a Webpage that details my personal portfolio</li>
+      <li>Developed basic skills needed for front-end development.</li>
+  </ul>
+ </div>
 <h2 id="heading2">Software Projects</h2>
-   <h3>Inter-Segment/Group UDP Broadcast (C++11, Linux)	</h3>
 
+<div class="lightBlueCard">
+   <h4>Inter-Segment/Group <abbr title="User Datagram Protocol">UDP</abbr> Broadcast (C++, Linux)	</h4>
+         <h5>Mar 2018 - Jun 2018</h5>
    <ul>
-       <li>Designed and implemented a UDP multicast relay program
+       <li>
+         Designed and implemented a <abbr title="User Datagram Protocol">UDP</abbr> multicast relay program
          that enables multicasting across network segments.
-         Used PThread to handle multiple tasks including
-         TCP and UDP communication controls. </li>
-       <li>...</li>
-       <li>...</li>
+         Used PThread to handle multiple tasks
+         <abbr title="Transmission Control Protocol">TCP</abbr> and
+         <abbr title="User Datagram Protocol">UDP</abbr> communication controls. </li>
+       <li>
+         Used PThread to handle multiple requests</li>
    </ul>
+ </div>
 
-   <h3>Memory Management </h3>
-
+ <div class="spacer">
+ </div>
+ <div class="lightBlueCard">
+   <h4>Dijkstra’s Shortest Path (C++, Linux)</h4>
+            <h5>Jan 2017 - Jun 2017</h5>
    <ul>
-       <li>Pair-programmed to model a heap which composed of
+       <li>Implemented a depth-first search (DFS) and a Dijkstra’s algorithm using C++. Focused on applying the core concepts of Object Oriented Programming, and scalability.</li>
+   </ul>
+ </div>
+ <div class="spacer">
+ </div>
+
+ <div class="lightBlueCard">
+   <h4>Fractal (C++, Visual Studio)</h4>
+            <h5>Jan 2017 - Jun 2017</h5>
+   <ul>
+       <li>Implemented a fractal program that will turn a given image into a fractal pattern of that image
+         by repainting pixels over the original color and creating a fractal pattern.</li>
+   </ul>
+ </div>
+ <div class="spacer">
+ </div>
+
+ <div class="lightBlueCard">
+   <h4>Nexus (Introduction to HCI, Paper prototyping)</h4>
+    <h5>Jan 2017 - Mar 2017</h5>
+   <ul>
+       <li>Collaborated in team to design and prototype an interactive community-focused system.
+         Created the paper prototyping and digital mock up to visualize the usability of the system. </li>
+   </ul>
+ </div>
+ <div class="spacer">
+ </div>
+
+ <div class="lightBlueCard">
+   <h4>Graph Search (Java, Eclipse) </h4>
+    <h5>Jan 2016 - Mar 2016</h5>
+   <ul>
+       <li>Pair-programmed to implement a breadth-first search (BFS) algorithm.
+         Used BFS to compute the solution of a Towers of Hanoi. </li>
+   </ul>
+ </div>
+ <div class="spacer">
+ </div>
+
+ <div class="lightBlueCard">
+   <h4>Obstacle Detector (C, Python) </h4>
+    <h5>Jan 2016 - Mar 2016</h5>
+   <ul>
+       <li>Collaborated in team to model a Road Hazard Detector System.
+         Implemented the Display Unit using C and Python to report the
+         distance of the nearest objects around the vehicle.  </li>
+   </ul>
+ </div>
+ <div class="spacer">
+ </div>
+
+ <div class="lightBlueCard">
+   <h4>MIPS Single Cycle CPU (Verilog, Quartus II, Model Sim)</h4>
+    <h5>Sep 2015 - Dec 2015</h5>
+   <ul>
+       <li>Designed and implemented a 32-bit MIPS single cycle using Verilog.
+         Analyzed behavior through Waveforms in ModelSim.
+         Produced document including Test Plan and Design Deliverable.  </li>
+   </ul>
+ </div>
+ <div class="spacer">
+ </div>
+
+ <div class="lightBlueCard">
+   <h4>Memory Management (C, Linux) </h4>
+   <h5>Sep 2015 - Dec 2015</h5>
+   <ul>
+       <li>Programmed a Memory Management application which composed of
          essential functions such as getmem, freemem, check_heap.
          Implemented the ‘freemem.c’. Tested ‘getmem.c’
          which was implemented by the teammate.</li>
-       <li>...</li>
-       <li>...</li>
+       <li>Tested teammate's code and provided feedback.</li>
+       <li>Collaborated via GitHub.</li>
    </ul>
+ </div>
+ <div class="spacer">
+ </div>
+
+ <div class="lightBlueCard">
+   <h4>Satellite Management and Control System (ARM Cortex-M3 Embedded-C)</h4>
+    <h5>Jun 2015 - Aug 2015</h5>
+   <ul>
+       <li>A simple mining machine system on Mars that could be controlled by a ground station
+         through satellite communication.   </li>
+   </ul>
+ </div>
+ <div class="spacer">
+ </div>
+
+ <div class="lightBlueCard">
+   <h4>Tic-Tac-Toe (Java)</h4>
+    <h5>Sep 2012 - Dec 2012</h5>
+   <ul>
+       <li>A simple Tic-Tac-Toe console application for two player. </li>
+   </ul>
+ </div>
+ <div class="spacer">
+ </div>
 
    <h2 id="heading2">Education</h2>
+   <div class="lightBlueCard">
    <table>
-    <tbody>
-        <tr>
-            <td>Master of Science in Computer Science and Software Engineering, University of Washington, Bothell</td>
-            <td>Dec, 2020</td>
+    <tbody >
+        <tr >
+            <td id="content1">M.S. Computer Science and Software Engineering, University of Washington, Bothell</td>
+            <td id="content1">       Dec, 2020</td>
         </tr>
+
         <tr>
-            <td>Graduate Certificate in Software Design and Development, University of Washington, Bothell</td>
-            <td>Jun, 2018</td>
-        </tr>
-        <tr>
-            <td>Bachelor of Science: Electrical Engineering, University of Washington, Seattle</td>
-            <td>Aug, 2016</td>
+            <td id="content1">B.S. Electrical Engineering, University of Washington, Seattle</td>
+            <td id="content1">       Aug, 2016</td>
         </tr>
     </tbody>
   </table>
 
+</div>
+
+<h2 id="heading2">Certification</h2>
+<div class="lightBlueCard">
+<table>
+ <tbody >
+
+     <tr>
+         <td id="content1">Graduate Certificate in Software Design and Development, University of Washington, Bothell</td>
+         <td id="content1">       Jun, 2018</td>
+     </tr>
+
+ </tbody>
+</table>
+
+</div>
+
+<div class="footer">
+</div>
    </body>
 </html>
